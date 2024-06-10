@@ -3,7 +3,7 @@ import data from "../data.json" with { type: "json" };
 
 export const router = express.Router();
 
-// Route 1 : Get all the notes using GET: /api/notes/fetchAllNotes - Log in required
+// Route 1 : Get all the stock data using GET: /api/stock/stockdata
 router.get("/stockdata", async (req, res) => {
   try {
     let stockData = data;
